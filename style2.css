@@ -1,0 +1,73 @@
+/* landing-page */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    cursor: url(https://ani.cursors-4u.net/toons/too-12/too1130.cur), auto !important;
+}
+
+/* Home Page */
+head{
+    display: none;
+}
+
+:root{
+    --header-image: url();
+    --body-bg-image: url();
+    --button-face: #c0c0c0;
+    --button-shadow: #808080;
+    --window-frame: #0a0a0a;
+    --border-raised-outer: inset -1px -1px -1px var(--window-frame), inset 1px 1px 1px 
+        var(--button-highlight);
+    --border-raised-inner: inset -2px -2px var(--button-shadow), inset 2px 2px
+        var(--button-face);
+}
+
+center{
+    display: block;
+    text-align: -webkit-center;
+    unicode-bidi: isolate;
+}
+
+/* Hobby Depot*/
+.notice{
+    border: 3px dotted var(--dkest-color);
+    border-radius: 10px;
+    background-color: #fff;
+    background-clip: padding-box;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.desc{
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.gallery{
+    width: 175px;
+    margin: 5px;
+    border: 3px solid var(--dkest-color);
+    border-radius: 15px;
+    background: #fff;
+    transition: transform .2s;
+    box-shadow: 0 1px 1px rgba(248, 150, 200, 0.5);
+}
+
+.main{
+    border: 3px ridge var(--dk-color);
+    border-radius: 50px;
+    background-color: var(--It-color);
+    box-shadow: 0 10px 15px rgba(165, 109, 141, 0.5);
+    padding: 10px;
+}

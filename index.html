@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="style2.css">
+        <script type="text/javascript" src="button.js" defer></script>
+    
+    <style>
+        :root{
+            --header-image: url();
+            --body-bg-image: url() /*insert header gif/image here!!!*/
+
+            /* Color */
+            --button-highlight: white;
+            --button-face: #c0c0c0;
+            --button-shadow: #808080;
+            --window-frame: #0a0a0a;
+
+            /* Borders */
+            --border-raised-outer: inset -1px -1px -1px var(--window-frame), 
+            inset 1px 1px 1px var(--button-highlight);
+            --border-raised-inner: inset -2px -2px var(--button-shadow), 
+            inset 2px 2px var(--button-face);
+        }
+    
+    @font-face{
+        font-family: 'Basiic';
+        src: url(); /* look up cute fonts to use*/
+    }
+    
+    @font-face{
+        font-family: 'Pixel';
+        src: url(); /* look up other cute fonts*/
+    }
+
+    body{
+        font-family: 'Basiic', sans-serif;
+        margin: 0;
+        background-color: #FFFFFF;
+        background-size: 82px;
+        color: #999999;
+        background-image: url('b33389200b6d9f3edb9170c03ccd481b.jpg');
+        cursor: url(https://ani.cursors-4u.net/toons/too-12/too1130.cur), auto;
+    }
+    
+    #container{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #container a{
+        color: #ef78a6;
+        text-decoration: none;
+        cursor: url(https://ani.cursors-4u.net/toons/too-12/too1130.cur), auto;
+    }
+    
+    #container a:hover{
+        color: #ef78a6;
+        text-decoration: wavy;
+        cursor: url(https://ani.cursors-4u.net/toons/too-12/too1130.cur), auto;
+    }
+    
+    /* Header */
+    #header{
+        margin-bottom: -50px;
+        margin-top: -40px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    /* Navigation */
+    #navbar{
+        height: 30px;
+        background-color: #ef78a6;
+        border: outset #ef78a6 2px;
+        border-radius: 25px;
+        width: 100%;
+    }
+
+    #navbar ul{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        justify-content: space-evenly;
+        font-size: 22px;
+        font-family: cursive;
+    }
+
+    #navbar li a{
+        color: #eed9f2;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+    #navbar li a:hover{
+        color: #eed9f2;
+        text-decoration: wavy;
+        cursor: url(https://ani.cursors-4u.net/toons/too-12/too1130.cur), auto;
+    }
+
+    #flex{
+        display: flex;
+    }
+
+    /* Sidebars */
+    #leftSidebar{
+        background-color: #FFFFFF;
+        background-image:url('f26d6c51f3a1f5bdaf2f7497e5276909');
+        border-radius: 25px 0px 0px 25px;
+        border: #c0c0c0 solid 1.5px;
+        width: 180px;
+        padding: 10px;
+        text-align: center;
+        font-size: smaller;
+        height: 500px;
+        overflow: auto;
+    }
+
+    #rightSidebar{
+        background-color: #FFFFFF;
+        background-image: url('f26d6c51f3a1f5bdaf2f7497e5276909');
+        border-radius: 0px 25pcx 25px 0px;
+        border: #c0c0c0 solid 1.5px;
+        width: 180px;
+        padding: 10px;
+        text-align: center;
+        font-size: smaller;
+        height: 500px;
+        overflow: auto;
+    }
+
+    /* Main area */
+    main{
+        background-color: #FFFFFF;
+        background-image: url('pink');
+        border: #c0c0c0 solid;
+        border-width: 1.5px 0px 1.5px 0px;
+        flex: 1;
+        padding: 10px;
+        order: 2;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    /* Display Order */
+    
+    h1{
+        font-size: 80px;
+        font-family: fantasy;
+        color: #ef78a6;
+        text-shadow: 4px 4px #eed9f2;
+    }
+
+    h2{
+        font-size: 25px;
+        font-family: fantasy;
+        color: #ef78a6;
+        text-shadow: 4px 4px #eed9f2;
+    }
+
+    strong{
+        font-family: cursive;
+        color: #ef78a6;
+        background: #eed9f2
+    }
+
+    @media only screen and (max-width: 900px){
+        #flex{
+            flex-wrap: wrap;
+        }
+
+        aside{
+            width: 100%;
+        }
+
+        main{
+            order: 1;
+        }
+
+        #leftSidebar{
+            order: 2;
+        }
+
+        #rightSidebar{
+            order: 3;
+        }
+
+        #navbar ul{
+            flex-wrap: wrap;
+        }
+    }
+    </style>
+    </head>
+
+    <body>
+     <div id="container">
+        <div id="header">
+            <h1>Mai Whimsy World</h1>
+        </div>
+        <nav id="navbar" style="margin-bottom: 10px;">
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="about.html" target="iframe_a">ABOUT</a>
+                </li>
+                <li>
+                    <a href="art gallery.html">ART GALLERY</a>
+                </li>
+                <li>
+                    <a href="End.html">FEEDBACK</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="flex">
+            <aside id="leftSidebar" style="margin-right: 0px;">
+                <h2>
+                    <img src="http://dl4.glitter-graphics.net/pub/994/994064xtdtdpuui3.gif" width=92 height=58 border=0></a>
+                </h2>
+            </aside>
+                <div id="container">
+                    <main>
+                        <center>
+                            <h1>WANT SOME PEACE OF MIND?</h1>
+                            <br>
+                            Then you have come to the right place.
+                            <br>
+                            <br>
+                            <ul>
+                                <li>Do you happen to have an on pass time you've forgotten about?</li>
+                                <li>Are you tired of having nothing to do besides constantly beinng on your phone?</li>
+                                <li>When was the last time you sat down and talked to a friend about a recent show you watched?</li>
+                            </ul>
+                            <br>
+                        </center>
+                    </main>
+            </div>
+            <aside id="rightSidebar" style="margin-left: 0px">
+                <h2>
+                    <img src="https://dl.glitter-graphics.com/pub/79/79246d0yv5j2irn.gif">
+                    Elevator bgm
+                    <img src="https://dl.glitter-graphics.com/pub/79/79246d0yv5j2irn.gif">
+                </h2>
+                <div class="box">
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3sREbslsLCnp15LWg8ilzc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </aside>
+        </div>
+    </div>
+        <footer>
+            <div id="footer">
+            Copyright &copy; 2025 maisha
+            </div>
+        </footer>
+
+        <iframe src="" width="100%" height="450" allowtransparency="yes" allow="autoplay"
+        frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+    </body>
+</html>
