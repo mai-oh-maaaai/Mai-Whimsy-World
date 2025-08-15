@@ -1,9 +1,71 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Feedback</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <nav id="navbar" style="margin-bottom: 10px;">
+            <ul>
+                <li>
+                    <a href="landing-page.html">HOME</a>
+                </li>
+                <li>
+                    <a href="About.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="art gallery.html">ART GALLERY</a>
+                </li>
+                <li>
+                    <a href="End.html">FEEDBACK</a>
+                </li>
+            </ul>
+        </nav>
+        <style>
+            body{
+                cursor: url(https://ani.cursors-4u.net/toons/too-12/too1130.cur), auto;
+            }
+            #navbar{
+        height: 30px;
+        background-color: #ef78a6;
+        border: outset #ef78a6 2px;
+        border-radius: 25px;
+        width: 100%;
+    }
+
+    #navbar ul{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        justify-content: space-evenly;
+        font-size: 22px;
+        font-family: cursive;
+    }
+
+    #navbar li a{
+        color: #eed9f2;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+    #navbar li a:hover{
+        color: #eed9f2;
+        text-decoration: wavy;
+        cursor: url(https://ani.cursors-4u.net/toons/too-12/too1130.cur), auto;
+    }
+
+    #flex{
+        display: flex;
+    }
+
+#navbar ul{
+            flex-wrap: wrap;
+        }
+        </style>
+
         <div id="main">
             <div id="content">
                 <div id="info-box-full">
@@ -14,7 +76,7 @@
                     <input type="text" placeholder="Your Name" id="name">
                     <input type="text" placeholder="Your Email" id="email">
                     <textarea placeholder="Type your message here"></textarea>
-                    <a class="button" href="message received.html">SUBMIT</a>
+                    <a class="button" href="feedback-response.html">SUBMIT</a>
                 </div>
             </div>
         </div>
