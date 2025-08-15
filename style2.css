@@ -26,6 +26,44 @@ head{
         var(--button-face);
 }
 
+#navbar{
+        height: 30px;
+        background-color: #ef78a6;
+        border: outset #ef78a6 2px;
+        border-radius: 25px;
+        width: 100%;
+    }
+
+    #navbar ul{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        justify-content: space-evenly;
+        font-size: 22px;
+        font-family: cursive;
+    }
+
+    #navbar li a{
+        color: #eed9f2;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+    #navbar li a:hover{
+        color: #eed9f2;
+        text-decoration: wavy;
+        cursor: url(https://ani.cursors-4u.net/toons/too-12/too1130.cur), auto;
+    }
+
+    #flex{
+        display: flex;
+    }
+
+#navbar ul{
+            flex-wrap: wrap;
+        }
+
 center{
     display: block;
     text-align: -webkit-center;
@@ -43,25 +81,10 @@ center{
     margin-bottom: 5px;
 }
 
-.desc{
-    padding: 10px;
-    text-align: center;
-    font-size: 1em;
-}
-
-div{
-    display: block;
-    unicode-bidi: isolate;
-}
-
-.gallery{
-    width: 175px;
-    margin: 5px;
-    border: 3px solid var(--dkest-color);
-    border-radius: 15px;
-    background: #fff;
-    transition: transform .2s;
-    box-shadow: 0 1px 1px rgba(248, 150, 200, 0.5);
+a:link{
+    color: #f6b0bb;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 .main{
@@ -70,4 +93,24 @@ div{
     background-color: var(--It-color);
     box-shadow: 0 10px 15px rgba(165, 109, 141, 0.5);
     padding: 10px;
+}
+
+nav[role="main"] {
+    float: center;
+    width: 100;
+    height: auto;
+    background: none;
+    padding: 5px;
+    margin: 5px;
+    opacity: 70%;
+}
+
+nav[role="sub"] {
+    float: center;
+    width: 100;
+    height: auto;
+    background: none;
+    padding: 5px;
+    margin: 5px;
+    opacity: 70%;
 }
