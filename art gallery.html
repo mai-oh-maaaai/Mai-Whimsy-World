@@ -7,6 +7,22 @@
         <title>Hobby Lounge</title>
     </head>
 <body>
+    <nav id="navbar" style="margin-bottom: 10px;">
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="about.html" target="iframe_a">ABOUT</a>
+                </li>
+                <li>
+                    <a href="art gallery.html">ART GALLERY</a>
+                </li>
+                <li>
+                    <a href="End.html">FEEDBACK</a>
+                </li>
+            </ul>
+        </nav>
     <div class="main">
     <main id="art-gallery-container" class="box-style">
         <section class="notice">
@@ -16,42 +32,53 @@
             </p>
             <p>
                 <img src="http://dl.glitter-graphics.net/pub/1009/1009301vx913s01dc.gif" width=16 height=11 border=0>This is a collection of some of the work I have done (a few I'm the proudest of). Some of the works included are inspired by other's artworks but all
-                images included are of items I made by hand (there's stuff from bought patterns, remakes and references of drawings from Pinterest, sketches similar to others that may be found online).
+                images included are of items I made by hand (there's stuff from bought patterns, remakes/references of drawings from Pinterest, sketches similar to others that may be found online).
             </p>
             <p>
                 <img src="http://dl.glitter-graphics.net/pub/1009/1009301vx913s01dc.gif" width=16 height=11 border=0>Lastly, please keep in mind that I am self-taught, meaning that my work doesn't always come out perfect but that is the beauty of art. Finding imperfect perfection
                 in your work. I'm still learning afterall.
             </p>
         </section>
-
-        <section id="art-gallery-inner" class="box-style"> 
-            <h3 class="cute-heading left-cute-heading">Crochet Pieces</h3>
-            <div class="image-gallery">
-                <div class="gallery">
-                    <img class="thumbnail-image" src="Snapchat-2070167510.jpg" alt onclick="openModal('Crochet)">
-                    <div class="desc">
-                        <a target="blank_" href="Snapchat-2070167510.jpg">Granny Square Bag</a>
-                        -flower hexagon bag. neapolitan themed.
-                    </div>
-                </div>
-            </div>
-
-            <h3 class="cute-heading left-cute-heading">Diamond Paintings</h3>
-            <div class="image-gallery">
-                <div class="gallery">
-                    <img class="thumbnail-image" src="Snapchat-728874163(1).png" alt onclick="openModal('Paintings')">
-                    <div class="desc">
-                        <a target="blank_" href="Snapchat-728874163(1).png">Panda</a>
-                        "-cute panda in a cherry blossom tree"
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        <div class="art-gallery"> 
+            <div style="background-image: url('20250216_105430.jpg');"></div>
+            <div style="background-image: url('20250815_150534.jpg');"></div>
+            <div style="background-image: url('20250815_150614.jpg');"></div>
+            <div style="background-image: url('20250815_150659.jpg');"></div>
+            <div style="background-image: url('20250815_150709.jpg');"></div>
+        </div>
+        <div class="art-gallery">
+            <div style="background-image: url('20250815_150721.jpg');"></div>
+            <div style="background-image: url('20250815_150739.jpg');"></div>
+            <div style="background-image: url('20250815_150755.jpg');"></div>
+            <div style="background-image: url('20250815_150804.jpg');"></div>
+            <div style="background-image: url('20250815_150822.jpg');"></div>
+        </div>
+        <div class="art-gallery">
+            <div style="background-image: url('InShot_20250814_225207126.jpg');"></div>
+            <div style="background-image: url('20250815_162113.jpg');"></div>
+            <div style="background-image: url('Snapchat-2070167510.jpg');"></div>
+            <div style="background-image: url('20250316_154247.jpg');"></div>
+            <div style="background-image: url('20250802_162538\(1\).png');"></div>
+        </div>
         <style>
-*{
-    box-sizing: border-box;
+.art-gallery{
+    display: flex;
+    height: 20rem;
+    gap: 1rem
         }
+
+.art-gallery > div{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.art-gallery > div:hover{
+    flex: 5;
+}
 
 p{
     display: block;
@@ -70,6 +97,7 @@ p{
 }
 
 body{
+    background-image: url('cat.jpg');
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -79,12 +107,9 @@ body{
     font-family: "magica";
     cursor: url(https://ani.cursors-4u.net/toons/too-12/too1130.cur), auto;
 }
-
-
         </style>
     </section>
     <br>
-    <script src="Script/modal.js"></script>
 
     <footer>
         <div id="footer">
@@ -92,5 +117,4 @@ body{
         </div>
     </footer>
 </body>
-
 </html>
